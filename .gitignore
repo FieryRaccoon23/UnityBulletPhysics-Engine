@@ -1,0 +1,6 @@
+BulletCollision/
+BulletDynamics/
+BulletSoftBody/
+LinearMath/
+btBulletCollisionCommon.h
+btBulletDynamicsCommon.h
