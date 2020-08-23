@@ -17,10 +17,14 @@ struct SharedMemory
 {
 public:
 	static void CreateShareFileMapping();
+	static void OpenShareFileMapping();
 	static void UnMapFileMapping();
 	static void ReadData();
 	static void RefreshMemoryData();
+	static bool IfMapOpened();
+
 private:
-	static HANDLE m_HMapFile;
-	static VisualData* m_PBuf;
+	inline static HANDLE m_HMapFile = nullptr;
+	inline static VisualData* m_PBuf = nullptr;
+	inline static bool m_IsMapOpen = false;
 };

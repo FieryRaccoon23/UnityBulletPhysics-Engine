@@ -2,12 +2,16 @@
 
 int _tmain()
 {
-    SharedMemory::CreateShareFileMapping();
-    SharedMemory::RefreshMemoryData();
-
     while (true)
     {
-        SharedMemory::ReadData();
+        if (!SharedMemory::IfMapOpened())
+        {
+            SharedMemory::OpenShareFileMapping();
+        }
+        else
+        {
+            SharedMemory::ReadData();
+        }
     }
 
     SharedMemory::UnMapFileMapping();
