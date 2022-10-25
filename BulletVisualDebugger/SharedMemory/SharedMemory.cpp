@@ -1,5 +1,5 @@
 #include "SharedMemory.h"
-#include "BulletVisualDebugger/VulkanVisualDisplay/VisualDebugInfo.h"
+//#include "../BulletVisualDebugger/VulkanVisualDisplay/VisualDebugInfo.h"
 #include <iostream>
 #include <string>
 
