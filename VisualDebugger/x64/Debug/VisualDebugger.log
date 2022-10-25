@@ -1,0 +1,20 @@
+﻿  Main.cpp
+  SharedMemory.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xutility(4817,24): warning C4244: '=': conversion from 'const _Ty' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+          and
+          [
+              _Ty=float
+          ]
+D:\VisualStudio\BulletPhysics\BulletPhysics\src\UnityBulletPhysics-Engine\BulletVisualDebugger\SharedMemory\SharedMemory.cpp(124): message : see reference to function template instantiation 'void std::fill<std::_Array_iterator<_Ty,12>,int>(const _FwdIt,const _FwdIt,const int &)' being compiled
+          with
+          [
+              _Ty=float,
+              _FwdIt=std::_Array_iterator<float,12>
+          ]
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  VisualDebugger.vcxproj -> D:\VisualStudio\BulletPhysics\BulletPhysics\x64\Debug\VisualDebugger.exe
